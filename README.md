@@ -1,6 +1,6 @@
-Main branch will be updated code 
+:branch:Main branch will be updated code 
 
 
 
 
-Feature branch will have earlier code
+:branch:Feature branch will have earlier code
