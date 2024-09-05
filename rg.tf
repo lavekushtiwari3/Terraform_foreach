@@ -1,8 +1,8 @@
 
 resource "azurerm_resource_group" "fondu" {
-  
-  name     = var.Rg_name
-  location = var.Rg_location
+  for_each =  {Mradul="southindia",Naresh="Centralindia",Sanidhya="west india"}
+  name     = each.key
+  location = each.value
 }
 
 
