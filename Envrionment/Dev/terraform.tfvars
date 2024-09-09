@@ -1,4 +1,8 @@
-Storages = {
+rg-details = { Mradul = "southindia",
+  Naresh = "Centralindia",
+Sanidhya = "west india" }
+
+stg-details =  {
   sa1 = {
     name                     = "sanidhya4647392vats"
     resource_group_name      = "Sanidhya"
