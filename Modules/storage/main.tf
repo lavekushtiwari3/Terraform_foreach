@@ -1,5 +1,5 @@
 
-resource "azurerm_storage_account" "Fondu-storage" {
+resource "azurerm_storage_account" "sa-block" {
  
   for_each                 = var.Storages
   name                     = each.value.name
