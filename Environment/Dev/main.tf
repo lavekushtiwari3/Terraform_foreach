@@ -20,3 +20,10 @@ module "rg-module" {
     source = "../../Modules/subnet"
     subnet = var.subnet-details
   }
+
+  module "vm-module" {
+    depends_on = [ module.subnet-module ]
+    source = "../../Modules/vm"
+    rg-name = "Sanidhya"
+    rg-location = "westeurope"
+  }
