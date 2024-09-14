@@ -11,7 +11,7 @@ resource "azurerm_network_interface" "nic-block" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = data.azurerm_subnet.sub-data.id
+    subnet_id                     = "/subscriptions/85fe58a3-e6ba-428b-bce6-4a4dd078be68/resourceGroups/Sanidhya/providers/Microsoft.Network/virtualNetworks/Sanidhya-network/subnets/Sanidhya-subnet"
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id = azurerm_public_ip.pip-block.id
   }
